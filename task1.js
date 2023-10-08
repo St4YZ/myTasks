@@ -1,34 +1,15 @@
-const myDecFunction = function (a,b) {
-    if(a > b){
-        return a
-    }
-    else
-    {
-        return b
-    }
+const myDecFunction = function(a,b) {
+    a > b ? console.log(a) : console.log(b)
 }
-console.log(myDecFunction(10,20))
+myDecFunction(20,40)
+
 function myExpFunction (c,d) {
-    if(c > d){
-        return c
-    }
-    else
-    {
-        return d
-    }
+    c > d ? console.log(c) : console.log(d)
 }
-console.log(myExpFunction(30,15))
+myExpFunction(30,15)
 
 
-const myArrowFunction = (e,f) => {
-    if(e > f){
-        return e
-    }
-    else
-    {
-        return f
-    }
-}
-console.log(myArrowFunction(9,8))
+const myArrowFunction = (e,f) =>  e > f ? console.log(e) : console.log(f)
+myArrowFunction(9,15)
 
 

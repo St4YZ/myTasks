@@ -10,6 +10,11 @@ function unPair () {
 unPair(array)
 
 // b) Дано масив сonst замініть слово “apple” на якесь інше.
-arrayColors = ["yellow", "green",  "apple", "red", "pink"]
-arrayColors[2] = "orange"
-console.log(arrayColors);
+arrayColors = ["yellow", "green",  "apple", "red", "apple", "pink", "apple", "apple"]
+function replaceWord (){
+    const targetStr = "apple"
+    const replacementStr = "orange"
+    return arrayColors.map(item => (item === targetStr ? replacementStr : item));
+}
+
+console.log(replaceWord(arrayColors));
