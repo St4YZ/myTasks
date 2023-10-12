@@ -9,12 +9,15 @@ const myUser = {
 }
 
 function getUserInfo (info) {
-    console.log("User's name:" + info.name + "\n" + "User's age:" + info.age)
+    const {name, age} = info
+    console.log("User's name:" + name + "\n" + "User's age:" + age)
 }
 getUserInfo(myUser)
 
 function getUserAddress (addrs) {
-    console.log("User's email:" + addrs.email + "\n" + "User's city:" + addrs.address.city + "\n" + "User's postal:" + addrs.address.postalCode)
+    const {email,address} = addrs
+    const {city,postalCode} = address
+    console.log("User's email:" + email + "\n" + "User's city:" + city + "\n" + "User's postal:" + postalCode)
 }
 getUserAddress(myUser)
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
