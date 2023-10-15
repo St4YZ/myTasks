@@ -12,12 +12,11 @@ const user = {
     }
 }
 // ------------------------------------------------------------------------------
-// Функція курильщика!!!
-const getUserInfo = function({name,age}) { console.log("User name is:", name, "\n" + "User age is:",age)}; const getUserAddress = function({city,postalCode}) { console.log("User name is:", city, "\n" + "User age is:",postalCode)};
+const getUserInfo = ({name,age}) => { console.log("User name is:", name, "\n" + "User age is:",age)};
+const getUserAddress = ({city,postalCode}) => { console.log("User name is:", city, "\n" + "User age is:",postalCode)};
 getUserInfo(user)
 getUserAddress(user.address)
 // ------------------------------------------------------------------------------
-// Функція здорової людини!!!
 // function getUserInfo ({name,age}){
 //     console.log("User name is:", name, "\n" + "User age is:",age)
 // }
